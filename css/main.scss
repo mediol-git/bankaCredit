@@ -6,6 +6,7 @@ $textColor: #040404;
 $whiteText: #ffffff;
 $heroText: #d8ff9f;
 $spanText: #66b41f;
+$labelColor: #959caa;
 $stepsBg: #f7f8f8;
 $footerBg: #16592d;
 
@@ -619,11 +620,22 @@ header {
         @media (max-width: 767px) {
             padding: 30px 30px 40px;
         }
+        #profileForm {
+            input {
+                width: 100%;
+            }
+            .step_1, .step_2, .step_3 {
+                .form_choice {
+                    input {
+                        width: 30px;
+                    }
+                }
+            }
+        }
         form {
             display: flex;
             flex-flow: column;
             input {
-                width: 100%;
                 height: 30px;
                 padding: 13px 25px;
                 margin-top: 15px;
@@ -770,6 +782,164 @@ header {
             align-items: center;
             justify-content: space-between;
             margin-top: 70px;
+            .btn-submit {
+                max-width: 320px;
+                @media (max-width: 767px) {
+                    max-width: 140px;
+                }
+            }
+        }
+    }
+}
+
+// timer
+.second-my {
+    text-align: center;
+    .result {
+        span.items {
+            padding: 10px 5px;
+            display: inline-block;
+            margin: 0 0 0 -5px;
+            min-width: 30px;
+            letter-spacing: 2px;
+        }
+        span.dot {
+            margin: 0 -1px;
+            position: relative;
+            left: -4px;
+        }
+    }
+    .titles {
+        position: relative;
+        height: 0;
+        right: -23px;
+        width: 300px;
+        span {
+            font-size: 10px;
+            position: relative;
+            top: 12px;
+        }
+    }
+    p.titloftimer {
+        font-size: 18px;
+        margin: 0 auto;
+        left: 10px;
+        position: relative;
+    }
+}
+.timerhello {
+    span {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    p {
+        font-size: 100%;
+        color: #191919;
+        font-size: 13px;
+        margin: 0;
+        line-height: 17px;
+    }
+} 
+// .timerhello .clearf {
+//     visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;
+// }
+// p.hellotimercopy {
+//     display:none!important;
+// } 
+
+// offers
+.offers {
+    padding-top: 150px;
+    h3 {
+        margin-bottom: 20px;
+    }
+    .hot_list {
+        max-width: 960px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .offer_item {
+        margin: 0 15px;
+        padding: 0 32px 40px;
+        background: #fff;
+        border-radius: 20px;
+        text-align: center;
+        -webkit-transition: all .3s ease-out;
+        -o-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        &:hover {
+            box-shadow: 0 0 30px rgba(0,0,0,.2);
+        }
+        label {
+            margin-bottom: -5px;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: .171429px;
+            color: $labelColor;
+        }
+        .mfo_logo {
+            height: 125px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 144px;
+            }
+        }
+        .chance {
+            display: flex;
+            flex-flow: column;
+            span {
+                margin-bottom: 6px;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 47px;
+                text-transform: uppercase;
+            }
+        }
+        .money {
+            .to {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: .2px;
+            }
+        }
+        button {
+            margin-top: 40px;
+        }
+    }
+    .offer_list {
+        padding: 0;
+        max-width: 960px;
+        display: flex;
+        flex-flow: wrap;
+        .offer_item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 32px;
+            margin-bottom: 40px;
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .offer_info {
+            width: 45%;
+            display: flex;
+            align-items: center;
+            flex-flow: row-reverse;
+            justify-content: space-around;
+        }
+        button {
+            margin-top: 0;
         }
     }
 }

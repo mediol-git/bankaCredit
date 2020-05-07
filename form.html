@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     require("./mysql.php");
     $hash = $_COOKIE['hash'];
     $id = $_COOKIE['id'];
@@ -9,7 +9,7 @@
         setcookie("id", $data["id"], time() + 30 * 24 * 60 * 60, "/");
     
     }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,17 @@
                 <div class="timer">
                     <div class="timer_time">
                         <label>Осталось</label>
-                        <script src="//megatimer.ru/get/a9fdebf36f9d88647b011ec1721fb738.js"></script>
+                        <div class="second-my timerhello timerhello_631">
+                            <div class="second-my-content">
+                                <p class="result">
+                                    <span class="result-minute items">17</span>
+                                    <span class="dot">:</span>
+                                    <span class="result-second items">48</span> 
+                                </p> 
+                                <div class="clearf"></div>
+                            </div>
+                        </div>
+                        <!-- HelloTimer http://hello-site.ru/timer/ -->
                     </div>
                     <div class="timer_text">
                         <h3>Займ от 0.01%</h3>

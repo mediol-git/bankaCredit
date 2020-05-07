@@ -908,6 +908,14 @@ header .nav .timer .timer_text label {
   }
 }
 
+.profile .profile_cont #profileForm input {
+  width: 100%;
+}
+
+.profile .profile_cont #profileForm .step_1 .form_choice input, .profile .profile_cont #profileForm .step_2 .form_choice input, .profile .profile_cont #profileForm .step_3 .form_choice input {
+  width: 30px;
+}
+
 .profile .profile_cont form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,7 +927,6 @@ header .nav .timer .timer_text label {
 }
 
 .profile .profile_cont form input {
-  width: 100%;
   height: 30px;
   padding: 13px 25px;
   margin-top: 15px;
@@ -1131,6 +1138,215 @@ header .nav .timer .timer_text label {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 70px;
+}
+
+.profile .profile_cont .buttons .btn-submit {
+  max-width: 320px;
+}
+
+@media (max-width: 767px) {
+  .profile .profile_cont .buttons .btn-submit {
+    max-width: 140px;
+  }
+}
+
+.second-my {
+  text-align: center;
+}
+
+.second-my .result span.items {
+  padding: 10px 5px;
+  display: inline-block;
+  margin: 0 0 0 -5px;
+  min-width: 30px;
+  letter-spacing: 2px;
+}
+
+.second-my .result span.dot {
+  margin: 0 -1px;
+  position: relative;
+  left: -4px;
+}
+
+.second-my .titles {
+  position: relative;
+  height: 0;
+  right: -23px;
+  width: 300px;
+}
+
+.second-my .titles span {
+  font-size: 10px;
+  position: relative;
+  top: 12px;
+}
+
+.second-my p.titloftimer {
+  font-size: 18px;
+  margin: 0 auto;
+  left: 10px;
+  position: relative;
+}
+
+.timerhello span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+.timerhello p {
+  font-size: 100%;
+  color: #191919;
+  font-size: 13px;
+  margin: 0;
+  line-height: 17px;
+}
+
+.offers {
+  padding-top: 150px;
+}
+
+.offers h3 {
+  margin-bottom: 20px;
+}
+
+.offers .hot_list {
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.offers .offer_item {
+  margin: 0 15px;
+  padding: 0 32px 40px;
+  background: #fff;
+  border-radius: 20px;
+  text-align: center;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.offers .offer_item:hover {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.offers .offer_item label {
+  margin-bottom: -5px;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: .171429px;
+  color: #959caa;
+}
+
+.offers .offer_item .mfo_logo {
+  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offers .offer_item .mfo_logo img {
+  width: 144px;
+}
+
+.offers .offer_item .chance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.offers .offer_item .chance span {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.offers .offer_item .money .to {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: .2px;
+}
+
+.offers .offer_item button {
+  margin-top: 40px;
+}
+
+.offers .offer_list {
+  padding: 0;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.offers .offer_list .offer_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 32px;
+  margin-bottom: 40px;
+}
+
+.offers .offer_list .offer_item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offers .offer_list .offer_info {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.offers .offer_list button {
+  margin-top: 0;
 }
 
 footer {
