@@ -39,7 +39,6 @@
                                 <div class="clearf"></div>
                             </div>
                         </div>
-                        <!-- HelloTimer http://hello-site.ru/timer/ -->
                     </div>
                     <div class="timer_text">
                         <h3>Займ от 0.01%</h3>
@@ -214,7 +213,7 @@
                 </div>
                 <div class="footer_info">
                     <div class="contacts">
-                        <p>"БанкаКредит" г.Харьков, ул. Льва Ландау, д. 33, оф 75 Код 3192810157</p>
+                        <p>"БанкаКредит" г.Красноград, 3 Микрорайон, д. 21, Код 3192810157</p>
                         <a href="mailto:info@banka.credit">info@banka.credit</a>
                         <a href="sms-unsubscribe.html" target="_blank">Отказаться от sms-рассылки.</a></p>
                     </div>
